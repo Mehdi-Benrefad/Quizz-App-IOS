@@ -7,9 +7,9 @@ et a traver les listeners du controlleur on detecte cette action et on effectue 
 
 En ca de glissement a droite
 
-<img src="App-result-Images/true.PNG" width="200" height="200">
+<img src="App-result-Images/true.png" width="200" height="200">
 
 En ca de glissement a gauche
 
-<img src="App-result-Images/false.PNG" width="200" height="200">
+<img src="App-result-Images/false.png" width="200" height="200">
 
