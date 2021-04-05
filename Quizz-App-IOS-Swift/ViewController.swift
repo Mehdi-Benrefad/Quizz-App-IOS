@@ -30,6 +30,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        newGameButton.layer.cornerRadius=25.0
+
         //ici on recuoere la notification envoyee par le modele
         //et on fait appel a la fonction questionloaded
         let name = Notification.Name(rawValue: "QuestionsLoaded")
