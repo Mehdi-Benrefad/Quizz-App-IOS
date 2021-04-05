@@ -5,7 +5,11 @@ et a traver les listeners du controlleur on detecte cette action et on effectue 
 
 <img src="App-result-Images/Capture.PNG"  width="200" height="400">
 
-<img src="App-result-Images/Capture.PNG" width="200" height="400">
+En ca de glissement a droite
 
-<img src="App-result-Images/Capture.PNG" width="200" height="400">
+<img src="App-result-Images/true.PNG" width="200" height="200">
+
+En ca de glissement a gauche
+
+<img src="App-result-Images/false.PNG" width="200" height="200">
 
