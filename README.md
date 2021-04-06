@@ -20,15 +20,15 @@ En ca de glissement a gauche:
 
 Mode paysant:
 
-<img src="App-result-Images/mode paysant.PNG"  width="200" height="400">
+<img src="App-result-Images/mode paysant.PNG"  width="400" height="200">
 
 
 iPad ecran d'acceuil:
 
-<img src="App-result-Images/Capture.PNG"  width="200" height="400">
+<img src="App-result-Images/ipad launch screen (2).PNG"  width="300" height="600">
 
 
 ipad ecran principal:
 
-<img src="App-result-Images/Capture.PNG"  width="200" height="400">
+<img src="App-result-Images/ipadmainscreen.PNG"  width="300" height="600">
 
