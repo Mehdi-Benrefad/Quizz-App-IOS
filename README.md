@@ -7,13 +7,28 @@ et a travers les listeners du controlleur on detecte cette action et on effectue
 
 
 
-En ca de glissement a droite
+En ca de glissement a droite:
 
 <img src="App-result-Images/true.png" width="200" height="200">
 
 
 
-En ca de glissement a gauche
+En ca de glissement a gauche:
 
 <img src="App-result-Images/false.png" width="200" height="200">
+
+
+Mode paysant:
+
+<img src="App-result-Images/Capture.PNG"  width="200" height="400">
+
+
+iPad ecran d'acceuil:
+
+<img src="App-result-Images/Capture.PNG"  width="200" height="400">
+
+
+ipad ecran principal:
+
+<img src="App-result-Images/Capture.PNG"  width="200" height="400">
 
