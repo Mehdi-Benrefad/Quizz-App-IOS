@@ -5,6 +5,9 @@ et a travers les listeners du controlleur on detecte cette action et on effectue
 
 Cette Application respecte le design pattern MVC, et le bonnes pratique du developpement, la classe game par exemple elle propose le design pattern singleton en donnant acces a une instance unique partagee pour qu'on puisse la manipuler et acceder au dit "state" de l'application, d'autre part  on n'a pas de communication directe entre le modele et la vue, mais ctte communication passe a travers un controlleur via les notifications.
 
+
+Dans un iPhone normal:
+
 <img src="App-result-Images/Capture.PNG"  width="200" height="400">
 
 
