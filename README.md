@@ -3,6 +3,8 @@ Cette Application ios est un quizz qui nous permet de repondre a 10 questions al
 la reponse a chaque question, pour repondre, l'utilisateur doit glisser son doigt a droite ou a gauche pour choisir si la proposition est vrai ou fausse.
 et a travers les listeners du controlleur on detecte cette action et on effectue des animations et des transformations visuelles.
 
+Cette Application respecte le design pattern MVC, et le bonnes pratique du developpement, la classe game par exemple elle propose le design pattern singleton en donnat acces a une instance unique partagee pour qu'on puisse la manipuler et acceder au dit "state" de l'application, d'autre part  on n'a pas de communication directe entre le modele et la vue, mais ctte communication passe a travers un controlleur via les notifications.
+
 <img src="App-result-Images/Capture.PNG"  width="200" height="400">
 
 
