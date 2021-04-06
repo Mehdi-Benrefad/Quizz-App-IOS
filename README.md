@@ -20,7 +20,7 @@ En ca de glissement a gauche:
 
 Mode paysant:
 
-<img src="App-result-Images/Capture.PNG"  width="200" height="400">
+<img src="App-result-Images/mode paysant.PNG"  width="200" height="400">
 
 
 iPad ecran d'acceuil:
