@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -17,89 +17,222 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quizz_App_IOS_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nzG-kK-7hc" customClass="QuestionView" customModule="Quizz_App_IOS_Swift" customModuleProvider="target">
-                                <rect key="frame" x="47.5" y="10" width="280" height="254"/>
+                                <rect key="frame" x="144" y="10" width="480" height="435.5"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWC-hp-ZL9">
+                                        <rect key="frame" x="8" y="8" width="464" height="419.5"/>
+                                        <fontDescription key="fontDescription" name="Balham" family="Balham" pointSize="23"/>
+                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Balham" family="Balham" pointSize="46"/>
+                                        </variation>
+                                    </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon Error" translatesAutoresizingMaskIntoConstraints="NO" id="asS-Oo-ZPQ">
-                                        <rect key="frame" x="112" y="190" width="56" height="56"/>
+                                        <rect key="frame" x="209" y="365.5" width="62" height="62"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="56" id="hbj-bB-bQR"/>
-                                            <constraint firstAttribute="width" constant="56" id="uIy-dq-dTo"/>
+                                            <constraint firstAttribute="height" constant="56" id="hbj-bB-bQR">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="62"/>
+                                            </constraint>
+                                            <constraint firstAttribute="width" constant="56" id="uIy-dq-dTo">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="62"/>
+                                            </constraint>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWC-hp-ZL9">
-                                        <rect key="frame" x="8" y="8" width="264" height="238"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.74848264460000002" green="0.768936336" blue="0.78823679690000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="IWC-hp-ZL9" firstAttribute="leading" secondItem="nzG-kK-7hc" secondAttribute="leading" constant="8" id="2MR-RN-lI3"/>
                                     <constraint firstItem="IWC-hp-ZL9" firstAttribute="top" secondItem="nzG-kK-7hc" secondAttribute="top" constant="8" id="2Vs-dq-an3"/>
-                                    <constraint firstAttribute="width" constant="280" id="44h-Gq-zpp"/>
+                                    <constraint firstAttribute="width" constant="280" id="44h-Gq-zpp">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="480"/>
+                                    </constraint>
                                     <constraint firstAttribute="width" secondItem="nzG-kK-7hc" secondAttribute="height" multiplier="140:127" id="6yH-sa-SmV"/>
                                     <constraint firstAttribute="trailing" secondItem="IWC-hp-ZL9" secondAttribute="trailing" constant="8" id="WAe-e2-3Ma"/>
-                                    <constraint firstAttribute="bottom" secondItem="IWC-hp-ZL9" secondAttribute="bottom" constant="8" id="ZnS-t9-HXe"/>
-                                    <constraint firstAttribute="bottom" secondItem="asS-Oo-ZPQ" secondAttribute="bottom" constant="8" id="dNr-N0-Dex"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="ZRr-z7-b5K"/>
+                                    <constraint firstAttribute="bottom" secondItem="IWC-hp-ZL9" secondAttribute="bottom" constant="8" id="ZnS-t9-HXe">
+                                        <variation key="heightClass=compact" constant="41"/>
+                                    </constraint>
+                                    <constraint firstAttribute="bottom" secondItem="asS-Oo-ZPQ" secondAttribute="bottom" constant="8" id="dNr-N0-Dex">
+                                        <variation key="heightClass=compact" constant="41"/>
+                                    </constraint>
                                     <constraint firstItem="asS-Oo-ZPQ" firstAttribute="centerX" secondItem="nzG-kK-7hc" secondAttribute="centerX" id="e8R-UQ-qJp"/>
+                                    <constraint firstAttribute="height" constant="254" id="hbH-DY-JT7">
+                                        <variation key="heightClass=compact" constant="287"/>
+                                    </constraint>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ZRr-z7-b5K"/>
+                                        <exclude reference="hbH-DY-JT7"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="6yH-sa-SmV"/>
+                                        <include reference="ZRr-z7-b5K"/>
+                                        <include reference="hbH-DY-JT7"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <outlet property="icon" destination="asS-Oo-ZPQ" id="wJa-P6-6bE"/>
                                     <outlet property="label" destination="IWC-hp-ZL9" id="lyz-tW-8fA"/>
                                 </connections>
                             </view>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="tDc-xy-KSn">
-                                <rect key="frame" x="160" y="579" width="55" height="49"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5E-uU-GMc">
+                                <rect key="frame" x="314" y="465.5" width="140" height="90"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="55" id="IlE-sW-oIV"/>
-                                    <constraint firstAttribute="height" constant="49" id="Skb-sY-pmA"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="62" id="FYn-zm-e0T"/>
+                                    <constraint firstAttribute="height" constant="62" id="HAM-gQ-mfE">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="90"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="90" id="I7M-PB-FZb"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="ZkZ-gK-XaZ">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="140"/>
+                                    </constraint>
                                 </constraints>
-                                <color key="color" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                            </activityIndicatorView>
+                                <fontDescription key="fontDescription" name="Balham" family="Balham" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="FYn-zm-e0T"/>
+                                        <exclude reference="I7M-PB-FZb"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="FYn-zm-e0T"/>
+                                        <include reference="I7M-PB-FZb"/>
+                                        <exclude reference="ZkZ-gK-XaZ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Balham" family="Balham" pointSize="62"/>
+                                </variation>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RI5-gL-RHI">
-                                <rect key="frame" x="87.5" y="557" width="200" height="90"/>
+                                <rect key="frame" x="209" y="894" width="350" height="110"/>
                                 <color key="backgroundColor" red="0.35909873250000002" green="0.55600327250000003" blue="0.78499895330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="1Ut-Oj-5yu"/>
-                                    <constraint firstAttribute="height" constant="90" id="HG2-bt-tcl"/>
+                                    <constraint firstAttribute="width" constant="200" id="1Ut-Oj-5yu">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="350"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="7bK-ef-jRQ"/>
+                                    <constraint firstAttribute="height" constant="90" id="HG2-bt-tcl">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="110"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="cpF-BE-Usf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Balham" family="Balham" pointSize="30"/>
                                 <state key="normal" title="New Game">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="7bK-ef-jRQ"/>
+                                        <exclude reference="cpF-BE-Usf"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="7bK-ef-jRQ"/>
+                                        <include reference="cpF-BE-Usf"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="didTapNewGameButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zhd-Af-cIR"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5E-uU-GMc">
-                                <rect key="frame" x="142.5" y="284" width="90" height="62"/>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="tDc-xy-KSn">
+                                <rect key="frame" x="356.5" y="935" width="55" height="49"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="62" id="HAM-gQ-mfE"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="ZkZ-gK-XaZ"/>
+                                    <constraint firstAttribute="width" constant="55" id="IlE-sW-oIV"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="QJA-Yu-XaC"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="55" id="TIb-yf-pNI"/>
+                                    <constraint firstAttribute="width" secondItem="tDc-xy-KSn" secondAttribute="height" multiplier="55:49" id="gEA-qr-r22"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="55" id="kmq-jg-rQK"/>
+                                    <constraint firstAttribute="height" constant="49" id="qXc-uc-HfV"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Balham" family="Balham" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="color" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.34322530029999998" green="0.41797602179999999" blue="0.51009660960000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="nzG-kK-7hc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="2BU-Bw-xUJ">
+                                <variation key="heightClass=compact" constant="20"/>
+                            </constraint>
                             <constraint firstItem="W5E-uU-GMc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7az-3Z-bSm"/>
-                            <constraint firstItem="W5E-uU-GMc" firstAttribute="top" secondItem="nzG-kK-7hc" secondAttribute="bottom" constant="20" id="A3J-wL-tDD"/>
-                            <constraint firstItem="nzG-kK-7hc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CHP-lL-RAu"/>
+                            <constraint firstItem="W5E-uU-GMc" firstAttribute="top" secondItem="nzG-kK-7hc" secondAttribute="bottom" constant="20" id="A3J-wL-tDD">
+                                <variation key="heightClass=compact" constant="-226"/>
+                            </constraint>
+                            <constraint firstItem="nzG-kK-7hc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CHP-lL-RAu">
+                                <variation key="heightClass=compact" constant="-244"/>
+                            </constraint>
                             <constraint firstItem="W5E-uU-GMc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GCF-uW-huG"/>
-                            <constraint firstItem="nzG-kK-7hc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="NcU-Do-xdv"/>
-                            <constraint firstItem="tDc-xy-KSn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pwi-H2-64z"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tDc-xy-KSn" secondAttribute="bottom" constant="39" id="Qmm-pY-OYH"/>
-                            <constraint firstItem="RI5-gL-RHI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RQ2-IL-lbA"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RI5-gL-RHI" secondAttribute="bottom" constant="20" id="qmm-qt-7A9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RI5-gL-RHI" secondAttribute="trailing" constant="31" id="HY3-jI-Kt1">
+                                <variation key="heightClass=compact" constant="29"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W5E-uU-GMc" secondAttribute="trailing" constant="73" id="Kcu-NT-WKk"/>
+                            <constraint firstItem="tDc-xy-KSn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="N3x-wd-lT7">
+                                <variation key="heightClass=compact" constant="82.5"/>
+                            </constraint>
+                            <constraint firstItem="nzG-kK-7hc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="NcU-Do-xdv">
+                                <variation key="heightClass=compact" constant="37"/>
+                            </constraint>
+                            <constraint firstItem="tDc-xy-KSn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oka-8M-rxA">
+                                <variation key="heightClass=compact" constant="275.5"/>
+                            </constraint>
+                            <constraint firstItem="tDc-xy-KSn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pwi-H2-64z">
+                                <variation key="heightClass=compact" constant="205"/>
+                            </constraint>
+                            <constraint firstItem="RI5-gL-RHI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RQ2-IL-lbA">
+                                <variation key="heightClass=compact" constant="275"/>
+                            </constraint>
+                            <constraint firstItem="W5E-uU-GMc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="98" id="W9n-Cc-XdB"/>
+                            <constraint firstItem="nzG-kK-7hc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="apT-rv-e87"/>
+                            <constraint firstItem="tDc-xy-KSn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hqx-PR-mjE">
+                                <variation key="heightClass=compact" constant="275.5"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tDc-xy-KSn" secondAttribute="bottom" constant="40" id="jCf-Ma-5NU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RI5-gL-RHI" secondAttribute="bottom" constant="39" id="p4d-IM-hGT">
+                                <variation key="heightClass=compact" constant="59"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RI5-gL-RHI" secondAttribute="bottom" constant="20" id="qmm-qt-7A9">
+                                <variation key="heightClass=compact" constant="59"/>
+                            </constraint>
+                            <constraint firstItem="tDc-xy-KSn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zzY-7h-wpC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="HY3-jI-Kt1"/>
+                                <exclude reference="Kcu-NT-WKk"/>
+                                <exclude reference="p4d-IM-hGT"/>
+                                <exclude reference="2BU-Bw-xUJ"/>
+                                <exclude reference="apT-rv-e87"/>
+                                <exclude reference="W9n-Cc-XdB"/>
+                                <exclude reference="N3x-wd-lT7"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="HY3-jI-Kt1"/>
+                                <include reference="Kcu-NT-WKk"/>
+                                <include reference="p4d-IM-hGT"/>
+                                <include reference="2BU-Bw-xUJ"/>
+                                <exclude reference="apT-rv-e87"/>
+                                <exclude reference="7az-3Z-bSm"/>
+                                <exclude reference="GCF-uW-huG"/>
+                                <include reference="W9n-Cc-XdB"/>
+                                <include reference="N3x-wd-lT7"/>
+                                <exclude reference="Pwi-H2-64z"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="tDc-xy-KSn" id="tx1-Zv-sd3"/>
@@ -110,7 +243,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130.40000000000001" y="73.313343328335833"/>
+            <point key="canvasLocation" x="129.98500749625188" y="72.799999999999997"/>
         </scene>
     </scenes>
     <resources>
